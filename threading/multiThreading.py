@@ -2,9 +2,11 @@ from time import sleep, perf_counter
 from threading import Thread
 
 def task():
-    print('start of the task function ')
-    sleep(1)
-    print('end of the task function ')
+    for i in range(5):
+        print('hello' ,i)
+        sleep(1)
+        print("end " , i)
+        
 
 start_time = perf_counter()
 
